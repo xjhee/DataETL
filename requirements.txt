@@ -1,0 +1,17 @@
+fastapi
+uvicorn
+sqlalchemy
+ormar == 0.10.11
+asyncio
+pydantic
+uuid
+pandas
+numpy
+pytest
+nest_asyncio
+apscheduler
+asyncpg
+psycopg2
+requests
+python-multipart
+Jinja2

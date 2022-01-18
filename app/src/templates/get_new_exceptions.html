@@ -1,0 +1,38 @@
+<html>
+    <head>
+        <title>Newly Existing Exceptions</title>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css">
+        <script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.js"></script>
+    </head>
+    <body>
+        <h2>Table of newly occurring exceptions</h2>
+        <div class="ui container" style="overflow-y:auto;white-space:nowrap;">
+            <table class="ui celled table">
+                <thead>
+                  <tr>
+                    <th>Region</th>
+                    <th>Level1_exception_message_filtered</th>
+                    <th>Level2_exception_classes</th>
+                    <th>Created_at</th>
+                    <th>Last_updated_at</th>
+                    <th>Num_of_occurences</th>
+                    <th>Is_known</th>
+                  </tr>
+                </thead>
+                <tbody>
+                    {% for each in data %}
+                    <tr>
+                        <td>{{ each.region }}</td>
+                        <td>{{ each.level1_exception_message_filtered }}</td>
+                        <td>{{ each.level2_exception_classes }}</td>
+                        <td>{{ each.created_at }}</td>
+                        <td>{{ each.last_updated_at }}</td>
+                        <td>{{ each.num_of_occurences }}</td>
+                        <td>{{ each.is_known }}</td>
+                    </tr>
+                    {% endfor %}
+                </tbody>
+              </table>
+        </div>  
+    </body>
+</html>

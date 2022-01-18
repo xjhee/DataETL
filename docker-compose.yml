@@ -1,0 +1,16 @@
+version: "3"
+services: 
+  fastapistg:
+    build: .
+    container_name: "fastapistg"
+    image: bfcm2020.azurecr.io/fastapistg:1.0
+    ports:
+      - "8000:8000"
+    volumes: 
+      - /app/
+
+
+
+  
+
+

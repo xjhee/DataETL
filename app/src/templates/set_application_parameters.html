@@ -1,0 +1,23 @@
+<html>
+    <head>
+        <title>Main page</title>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css">
+        <script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.js"></script>
+    </head>
+    <body>
+        <h2>Get/Set Application Parameters</h2>
+        <p>Threshold: {{data.exception_percentile}}</p>
+        <p>Number of days: {{data.exception_days}}</p>
+
+        <form action="/items/setparameters" method="post" class="ui form">
+            <div class="field">
+              <label>new_exception_percentile</label>
+              <input type="text" name="new_exception_percentile" placeholder="new_exception_percentile">
+            </div>
+            <div class="field">
+              <label>new_exception_days</label>
+              <input type="text" name="new_exception_days" placeholder="new_exception_days">
+            <button class="ui button" type="submit">Submit</button>
+        </form>
+    </body>
+</html>
