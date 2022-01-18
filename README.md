@@ -1,4 +1,3 @@
-# iodstg-fastapi
-FastAPI application for Intelligent Outage Detection project
+# fastapi and data ETL
+FastAPI application 
 
-*Please note that under folder /app/src/mlpipeline: we are not implementing Machine Learning algorithms yet under current business requirement, but I kept some possible algos here for further references
